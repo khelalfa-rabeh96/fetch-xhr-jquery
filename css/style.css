@@ -24,3 +24,10 @@ header{
 	background-color: #245b8c;
 	color: #fff;
 }
+
+header h1{
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
