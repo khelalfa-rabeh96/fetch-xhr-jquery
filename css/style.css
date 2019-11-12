@@ -56,3 +56,30 @@ header form #submit-btn{
     color: #fff;
     font-size: 15px;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    header form #search{
+	    width: 70%;
+	    padding:1em 1em;
+	    font-size:15px;
+	}
+
+	header form #submit-btn{
+	    width: 25%;
+	    padding:1em 1em;
+	    font-size:15px;
+	    
+	}
+}
+
+@media only screen and (max-width: 512px) {
+    header form #search{
+	    padding:1em 0.6em;
+	}
+
+	header form #submit-btn{
+	    padding:1em 0.6em;
+	}
+}
