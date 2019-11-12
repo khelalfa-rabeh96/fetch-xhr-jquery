@@ -41,4 +41,18 @@ header form input{
 	border-radius: 4px;
 }
 
+header form #search{
+	padding: 1.4em 2em;
+    width: 80%;
+    border: 1px solid #fff;
+}
 
+header form #submit-btn{
+    padding: 1.4em 2em;
+    width: 18%;
+    background-color: #12a159;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
