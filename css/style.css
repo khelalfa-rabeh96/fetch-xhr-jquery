@@ -120,6 +120,15 @@ figure figcaption{
     width: 100%;
 }
 
+.error-no-image {
+    background: url(../images/icon-no-image.png) no-repeat 50% top;
+    margin-bottom: 3em;
+    padding-top: 8em;
+    text-align: center;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     header form #search{
 	    width: 70%;
