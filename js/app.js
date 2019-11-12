@@ -24,8 +24,13 @@
 		
 		imgRequest.send();
 
-		
-		
+		// Articles from New York times API
+        
+		const articleRequest = new XMLHttpRequest();
+		articleRequest.onload = addArticles;
+		articleRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchText}
+			&api-key=LTvhRdereQkUsWT29DjkvzFlo5G4vcJD`);
+		articleRequest.send();
 
 
 		// Add Image function for add the image to results container
