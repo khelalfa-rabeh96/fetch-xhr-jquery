@@ -22,8 +22,9 @@
 		};
 		imgRequest.setRequestHeader('Authorization', 'Client-ID 043d468bd48b346487d1f98d36b518960de65b5218b9623867f0cdf8085d9ba1');
 		
+		imgRequest.send();
 
-		
+
 		// Add Image function for add the image to results container
 		function addImage(){
 			let htmlContent = '';
