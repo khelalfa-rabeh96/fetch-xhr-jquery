@@ -127,7 +127,12 @@ figure figcaption{
     text-align: center;
 }
 
-
+.error-no-article {
+    background: url(../images/icon-no-articles.png) no-repeat 50% top;
+    margin-top: 3em;
+    padding-top: 8em;
+    text-align: center;
+}
 
 @media only screen and (max-width: 768px) {
     header form #search{
