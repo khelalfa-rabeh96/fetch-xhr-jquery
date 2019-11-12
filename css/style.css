@@ -61,6 +61,28 @@ header form #submit-btn{
 .search-results{
     margin-top: 30px;
 }
+ul{list-style: none;}
+
+.search-results h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #bf3d3d;
+
+}
+.search-results p{
+    font-weight: normal;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+
+}
 
 
 
