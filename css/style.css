@@ -84,6 +84,18 @@ a{
 
 }
 
+.article{
+	background: url(../images/icon-article.png), #ffffff;
+    background-position: 1.5em 1.2em;
+    background-repeat: no-repeat;
+    background-size: 1.8em;
+    border: solid 1px #dbe2e8;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5em;
+    padding: 1em 2em 1em 4.8em;
+
+}
+
 
 
 
