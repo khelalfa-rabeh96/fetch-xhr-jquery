@@ -62,8 +62,9 @@
 				data.response.docs.map(function(article){
 					return `
 					<li class="article">
-						<h2><<a href="${article.web_url}">${article.headline.main}</a>
+						<h2><a href="${article.web_url}">${article.headline.main}</a></h2>
 						<p>${article.snippet}</p>
+					</li>
 					`
 				}).join('') + '</ul>'
 
