@@ -96,6 +96,13 @@ a{
 
 }
 
+figure{
+	margin: 0;
+    margin-bottom: 2em;
+    position: relative;
+    text-align: center;
+}
+
 
 
 
