@@ -110,7 +110,15 @@ figure img{
 }
 
 
-
+figure figcaption{
+	bottom: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0.8em 1.4em;
+    position: absolute;
+    width: 100%;
+}
 
 @media only screen and (max-width: 768px) {
     header form #search{
