@@ -24,6 +24,9 @@
 		
 		imgRequest.send();
 
+		
+		
+
 
 		// Add Image function for add the image to results container
 		function addImage(){
@@ -40,6 +43,28 @@
 				`
 			}else{
 				htmlContent = `<div class="error-no-image">No Image available</div>`
+			}
+			resultContainer.insertAdjacentHTML('afterbegin', htmlContent);
+		}
+
+		//Add NYT Articles to the results Container
+		function addArticles(){
+			let htmlContent = '';
+			const data = JSON.parse(this.responseText);
+
+			if(data.response && data.response.docs && data.response.docs.length >1){
+				htmlContent = '<ul class="articles">'+
+				data.response.docs.map(function(article){
+					return `
+					<li class="article">
+						<h2><<a href="${article.web_url}">${article.headline.main}</a>
+						<p>${article.snippet}</p>
+					`
+				}).join('') + '</ul>'
+
+				
+			}else{
+				htmlContent = '<div class="error-no-article">No articles availables</div>'
 			}
 			resultContainer.insertAdjacentHTML('afterbegin', htmlContent);
 		}
