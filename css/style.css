@@ -7,6 +7,9 @@
 	padding: 0;
 }
 
+body{
+	font-family:OpenSans, sans-serif; 
+}
 
 .container{
 	padding-right:15px;
