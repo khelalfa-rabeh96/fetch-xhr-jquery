@@ -31,3 +31,9 @@ header h1{
 	font-weight: normal;
 }
 
+header form{
+	padding: 10px 70px;
+	display:flex;
+	justify-content: space-between;
+}
+
