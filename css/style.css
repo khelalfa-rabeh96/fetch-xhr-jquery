@@ -83,4 +83,8 @@ header form #submit-btn{
 	header form #submit-btn{
 	    padding:1em 0.6em;
 	}
+
+	header form{
+		padding: 10px 40px;
+	}
 }
