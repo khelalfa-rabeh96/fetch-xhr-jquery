@@ -11,7 +11,19 @@
 		resultContainer.innerHTML = '';
 		let searchText = searchInput.value;
 		
+		// Image from unsplash API
+        
+		const imgRequest = new XMLHttpRequest();
 
+		imgRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
+		imgRequest.onload = addImage;
+		imgRequest.onerroe = function(err){
+			requestError(err, 'image');
+		};
+		imgRequest.setRequestHeader('Authorization', 'Client-ID 043d468bd48b346487d1f98d36b518960de65b5218b9623867f0cdf8085d9ba1');
+		imgRequest.send();
+
+		
 		// Add Image function for add the image to results container
 		function addImage(){
 			let htmlContent = '';
