@@ -15,7 +15,7 @@
         
 		const imgRequest = new XMLHttpRequest();
 
-		imgRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
+		imgRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchText}`);
 		imgRequest.onload = addImage;
 		imgRequest.onerroe = function(err){
 			requestError(err, 'image');
