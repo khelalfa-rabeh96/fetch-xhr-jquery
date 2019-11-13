@@ -18,7 +18,7 @@
 		imgRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchText}`);
 		imgRequest.onload = addImage;
 		imgRequest.onerroe = function(err){
-			requestError(err, 'image');
+			console.log(err);
 		};
 		imgRequest.setRequestHeader('Authorization', 'Client-ID 043d468bd48b346487d1f98d36b518960de65b5218b9623867f0cdf8085d9ba1');
 		
